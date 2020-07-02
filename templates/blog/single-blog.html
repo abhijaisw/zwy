@@ -1,0 +1,51 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block title %} {{ blo_detail.title }} {% endblock%}
+
+{% block content %}
+    <section class="home-slider-loop-false  inner-page owl-carousel">
+      <div class="slider-item" style="background-image: url('{%static ''%}img/slider-1.jpg');">
+        
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-8 text-center col-sm-12 element-animate">
+              <h1> {{ blo_detail.title }}</h1>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- END slider -->
+
+    
+    <section class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 mb-5">
+            <p class="mb-5"><img src="/media/{{ blo_detail.blog_image }}" alt="" class="img-fluid"></p> 
+            
+            <div class="row justify-content-center">
+              <div class="col-md-7 mb-5">
+                <h2 class="mb-5">{{ blo_detail.title }}</h2>
+
+                {{blo_detail.desc | safe}}
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+{% endblock%}
+
+
+

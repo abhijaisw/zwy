@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+    <section class="home-slider owl-carousel">
+    	<div class="slider-item" style="background-image: url('{%static 'img/slider-1.jpg'%}');">
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-8 text-center col-sm-12 element-animate">
+              <h1>Health is wealth</h1>
+              <p class="mb-5">Pretty much the most awesome workout ever. Dance to great music, with great people, and burn a ton of calories without even realizing it.</p>
+              <p><a href="#" class="btn btn-white btn-outline-white">Get Started</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="slider-item" style="background-image: url('{%static 'img/slider-2.jpg'%}');">
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-8 text-center col-sm-12 element-animate">
+              <h1>Join Zumba Today</h1>
+              <p class="mb-5">Grooving to the beats of salsa, flamenco, and merengue music feels more like a dance party than a workout, which is exactly what makes Zumba so popular.</p>
+              <p><a href="#" class="btn btn-white btn-outline-white">Get Started</a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- END slider -->
+
+
+{% endblock %}
+
+{% block js %}
+
+
+{% endblock %}

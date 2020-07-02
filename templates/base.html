@@ -1,0 +1,27 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{% block title %} {% endblock %}</title>
+    {% include 'head.html'%}
+  </head>
+  <body>    
+    {% include 'navbar.html'%}
+
+    {% block content %}
+
+    {% endblock %}
+
+    {% include 'footer.html'%}
+    {% include 'js.html'%}
+    {% block js %}
+    <script type="text/javascript">
+        {% if thank %}
+            alert('Thanks for Contacting us. We will back to soon.');
+            document.location = "/contact/"; 
+        {% endif %}
+    </script>
+    
+    {% endblock %}
+  </body>
+</html>

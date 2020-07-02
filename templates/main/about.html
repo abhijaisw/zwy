@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About {% endblock %}
+{% block content %}
+<section class="home-slider-loop-false  inner-page owl-carousel">
+    <div class="slider-item" style="background-image: url('{%static 'img/slider-1.jpg'%}');">
+        <div class="container">
+            <div class="row slider-text align-items-center justify-content-center">
+                <div class="col-md-8 text-center col-sm-12 element-animate">
+                    <h1>About Us</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END slider -->
+<section class="section element-animate">
+    <div class="clearfix mb-5 pb-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center heading-wrap">
+                    <h2>About Us</h2>
+                    <span class="back-text">About</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <p><img src="{%static ''%}img/img_1.jpg" alt="" class="img-fluid"></p>
+                <p class="mb-5"><img src="{%static ''%}img/img_2.jpg" alt="" class="img-fluid"></p>
+            </div>
+            <div class="col-lg-6 pl-2 pl-lg-5">
+                <h2 class="mb-5">How It Works</h2>
+                <p>Grooving to the beats of salsa, flamenco, and merengue music feels more like a dance party than a workout, which is exactly what makes Zumba so popular. The Latin-inspired dance workout is one of the most popular group exercise classes in the world.</p>
+                <p>The high-energy classes are set to upbeat music and feature choreographed dance numbers that you might see in a nightclub. You don’t need to be a great dancer to feel welcome in a Zumba class. With the tag line, “Ditch the Workout, Join the Party,” the classes emphasize moving to the music and having a good time, no rhythm required.</p>
+                <p>There are several different kinds of Zumba classes, from Aqua Zumba workouts to classes like Zumba Toning that incorporate weights for additional calorie burning and strength training. There are even Zumba classes for kids.</p>
+                <p>Working up a sweat in the 60-minute classes burns an average of 369 calories -- more than cardio kickboxing or step aerobics. You’ll get a great cardio workout that melts fat, strengthens your core, and improves flexibility.</p>
+            </div>
+            <div class="col-lg-6">
+            </div>
+            <div class="col-lg-6 pl-2 pl-lg-5">
+                <h2 class="mb-5">Benefits</h2>
+                <p>A total workout, combining all elements of fitness – cardio, muscle conditioning, balance and flexibility, boosted energy and a serious dose of awesome each time you leave class.</p>
+                <p>Zumba® Step increase cardio and calorie burning, while adding moves that define and sculpt your core and legs.</p>
+                <p>Lightweight maraca-like Toning Sticks enhances sense of rhythm and coordination, while toning target zones, including arms, core and lower body.</p>
+                <p>Class focuses on all elements of fitness: cardiovascular, muscular conditioning, flexibility and balance!</p>
+                <p>Low to moderate intensity strength training exercises are essential to prevent a dramatic reduction in muscle mass, muscle strength, atrophy and sarcopenia (loss of skeletal muscle mass). Walk in ready to have a blast and tone up, leave exhilarated and empowered!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section element-animate">
+    <div class="clearfix mb-5 pb-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center heading-wrap">
+                    <h2>Expert Trainers</h2>
+                    <span class="back-text">Our Trainers</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="major-caousel js-carousel-1 owl-carousel">
+                <div>
+                    <div class="media d-block media-custom text-center">
+                    </div>
+                </div>
+                <div>
+                    <div class="media d-block media-custom text-center">
+                        <a href="{% url 'About_Me' %}"><img src="{%static ''%}img/person_1.jpg" alt="Image Placeholder" class="img-fluid"></a>
+                        <div class="media-body">
+                            <h3 class="mt-0 text-black">Yashi Ghag</h3>
+                            <p class="lead">Zumba Instructor</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="media d-block media-custom text-center">
+                    </div>
+                </div>
+            </div>
+            <!-- END slider -->
+        </div>
+    </div>
+</section> <!-- .section -->
+{% endblock %}
+{% block js %}
+{% endblock %}
